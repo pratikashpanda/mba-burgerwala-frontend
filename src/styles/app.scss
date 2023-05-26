@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Tenor+Sans&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import "header.scss";
+@import "home.scss";
+@import "founder.scss";
+@import "menu.scss";
+@import "footer.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
