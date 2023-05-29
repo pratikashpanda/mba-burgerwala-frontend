@@ -9,6 +9,11 @@ import Cart from "./components/Cart/Cart";
 import Shipping from "./components/Cart/Shipping.jsx";
 import ConfirmOrder from "./components/Cart/ConfirmOrder.jsx";
 import PaymentSuccess from "./components/Cart/PaymentSuccess.jsx";
+import Login from "./components/login/Login";
+import Profile from "./components/profile/Profile";
+import MyOrders from "./components/myorders/MyOrders"
+import OrderDetail from "./components/myorders/OrderDetail";
+import Dashboard from "./components/admin/Dashboard";
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/confirmOrder" element={<ConfirmOrder />} />
           <Route path="/paymentSuccess" element={<PaymentSuccess />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/me" element={<Profile />} />
+          <Route path="/myOrders" element={<MyOrders />} />
+          <Route path="/order/:id" element={<OrderDetail />} />
+          <Route path="/admin/dashboard" element={<Dashboard />} />
         </Routes>
         <Footer />
       </Router>
