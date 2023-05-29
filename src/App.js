@@ -14,6 +14,10 @@ import Profile from "./components/profile/Profile";
 import MyOrders from "./components/myorders/MyOrders"
 import OrderDetail from "./components/myorders/OrderDetail";
 import Dashboard from "./components/admin/Dashboard";
+import Users from "./components/admin/Users";
+import Orders from "./components/admin/Orders.jsx";
+import About from "./components/about/About";
+import NotFound from "./components/Layout/NotFound";
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
           <Route path="/myOrders" element={<MyOrders />} />
           <Route path="/order/:id" element={<OrderDetail />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/users" element={<Users />} />
+          <Route path="/admin/orders" element={<Orders />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

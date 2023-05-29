@@ -76,3 +76,28 @@
         }
     }
 }
+@media screen and (max-width:600px) {
+    .dashboard{
+        height: unset;
+        min-height: 100vh;
+        >main {
+            >article {
+                flex-direction: column;
+                >div {
+                    margin: 1rem;
+                }
+            }
+            >section {
+                flex-direction: column;
+                padding: 2rem;
+                >div {
+                    width: 100%;
+                    margin: 1rem 0;
+                }
+                >aside {
+                    width: 100%;
+                }
+            }
+        }
+        }
+    }
